@@ -1,0 +1,7 @@
+/output*/
+**/output/
+.DS_Store
+*.jld2
+.gitignore
+/.vscode/
+*.toml
