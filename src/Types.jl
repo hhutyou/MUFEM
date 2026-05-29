@@ -29,3 +29,10 @@ struct ElastoPlastic <: ConstitutiveModel
 	φ::Float64   # friction angle [rad]
 	c::Float64   # cohesion [Pa]
 end
+
+struct VonMisesHardening <: ConstitutiveModel
+	E::Float64    # Young's modulus [Pa]
+	ν::Float64    # Poisson's ratio [-]
+	σ_y::Float64  # initial uniaxial yield stress [Pa]
+	H::Float64    # isotropic linear hardening modulus [Pa]
+end
